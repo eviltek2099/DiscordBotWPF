@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscordBotWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="DiscordBot" Height="228.521" Width="225.178" WindowStartupLocation="CenterScreen">
+  <Grid>
+    <Button Content="Button" HorizontalAlignment="Left" Height="42" Margin="38,136,0,0" VerticalAlignment="Top" Width="134" Click="Button_Click"/>
+    <Label Content="{Binding Status, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="25" Margin="38,65,0,0" VerticalAlignment="Top" Width="134" Background="#FFA6A6A6" />
+    <Label Content="{Binding Running, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="25" Margin="38,100,0,0" VerticalAlignment="Top" Width="134" Background="#FFA6A6A6"/>
+
+  </Grid>
 </Window>
